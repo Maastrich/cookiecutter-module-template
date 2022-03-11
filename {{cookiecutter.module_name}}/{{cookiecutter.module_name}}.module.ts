@@ -1,6 +1,6 @@
-import { Module } from "@nestjs/common";
-import { {{ cookiecutter.module_mame_pascal }}Controller } from "./{{cookiecutter.module_mame_pascal}}.controller";
-import { {{ cookiecutter.module_mame_pascal }}Service } from "./{{cookiecutter.module_mame_pascal}}.service";
+import { Module } from '@nestjs/common';
+import { {{ cookiecutter.module_mame_pascal }}Controller } from './{{cookiecutter.module_name}}.controller';
+import { {{ cookiecutter.module_mame_pascal }}Service } from './{{cookiecutter.module_name}}.service';
 
 @Module({
   imports: [],
