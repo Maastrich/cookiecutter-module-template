@@ -7,10 +7,9 @@ export class {{ cookiecutter.Module_Name }}Controller {
 
 {% if cookiecutter.module_routes|length > 0 %}
 {% for item in cookiecutter.module_routes %}
-@{{ item.method }}("{{item.path}}")
-{{ item.name }} (): string {
-  return {{ cookiecutter.module_name }
-}Service.{{ item.name }} ();
+  @{{ item.method }}("{{item.path}}")
+  {{ item.name }}(): string {
+    return {{ cookiecutter.module_name }}Service.{{ item.name }} ();
   }
 {% endfor %}
 {% endif %}
