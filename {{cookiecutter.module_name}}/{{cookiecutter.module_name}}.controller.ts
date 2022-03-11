@@ -5,7 +5,7 @@ import { {{ cookiecutter.module_mame_pascal }}Service } from "./{{cookiecutter.m
 constructor(private readonly {{ cookiecutter.module_name }}Service: {{ cookiecutter.module_mame_pascal }}Service) { }
 export class {{ cookiecutter.module_mame_pascal }}Controller {
 
-  {% for key in cookiecutter.module_routes %}
+  {% for key in module_routes %}
   @Get("{{ key }}")
   {% endfor %}
 
