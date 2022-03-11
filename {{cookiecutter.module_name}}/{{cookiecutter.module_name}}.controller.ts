@@ -6,7 +6,7 @@ constructor(private readonly {{ cookiecutter.module_name }}Service: {{ cookiecut
 export class {{ cookiecutter.module_mame_pascal }}Controller {
 
   {% for key in cookiecutter.module_routes %}
-  @Get("{{ key }}")
+  @Get("{{ key.path }}")
   {% endfor %}
 
 }
