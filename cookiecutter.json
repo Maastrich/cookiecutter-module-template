@@ -3,8 +3,10 @@
   "module_mame_pascal": "",
   "module_path": "",
   "module_routes": [
-    "value1",
-    "value2",
-    "value3"
+    [
+      "value1",
+      "value2",
+      "value3"
+    ]
   ]
 }
