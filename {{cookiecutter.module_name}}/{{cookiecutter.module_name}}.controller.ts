@@ -5,7 +5,7 @@ import {{{cookiecutter.Module_Name}}Service } from './{{cookiecutter.module_name
 export class {{cookiecutter.Module_Name}}Controller {
   constructor(private readonly {{cookiecutter.module_name}}Service: { { cookiecutter.Module_Name } }Service) { }
 
-  {% for item in cookiecutter.module_routes %}
+  {% for item in cookiecutter.module_routes|list %}
   @{{item.method}}('{{item.path}}')
   {{item.name}}(): string {
     return {{cookiecutter.module_name}}Service.{{item.name}}();
