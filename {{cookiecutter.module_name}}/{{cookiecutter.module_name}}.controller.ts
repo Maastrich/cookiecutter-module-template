@@ -7,6 +7,7 @@ export class {{ cookiecutter.module_mame_pascal }}Controller {
 
   {% for key, item in cookiecutter.module_routes %}
   @Get("{{ key }}")
+  {{ item }}
   {% endfor %}
 
 }
